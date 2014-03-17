@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TWAPIManager.h"
 
 @interface ViewController : UIViewController
+
+@property (nonatomic, strong) TWAPIManager *apiManager;
 
 @end

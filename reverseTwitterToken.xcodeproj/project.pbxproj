@@ -21,6 +21,13 @@
 		93E3042B18D764A200A17B39 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E3040D18D764A100A17B39 /* UIKit.framework */; };
 		93E3043318D764A200A17B39 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93E3043118D764A200A17B39 /* InfoPlist.strings */; };
 		93E3043518D764A200A17B39 /* reverseTwitterTokenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E3043418D764A200A17B39 /* reverseTwitterTokenTests.m */; };
+		93E3044A18D764D300A17B39 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E3044118D764D300A17B39 /* NSData+Base64.m */; };
+		93E3044B18D764D300A17B39 /* OAuth+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E3044318D764D300A17B39 /* OAuth+Additions.m */; };
+		93E3044C18D764D300A17B39 /* OAuthCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E3044518D764D300A17B39 /* OAuthCore.m */; };
+		93E3044D18D764D300A17B39 /* TWAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E3044718D764D300A17B39 /* TWAPIManager.m */; };
+		93E3044E18D764D300A17B39 /* TWSignedRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E3044918D764D300A17B39 /* TWSignedRequest.m */; };
+		93E3045018D765E000A17B39 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E3044F18D765E000A17B39 /* Social.framework */; };
+		93E3045218D765E500A17B39 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E3045118D765E500A17B39 /* Accounts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +60,18 @@
 		93E3043018D764A200A17B39 /* reverseTwitterTokenTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "reverseTwitterTokenTests-Info.plist"; sourceTree = "<group>"; };
 		93E3043218D764A200A17B39 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		93E3043418D764A200A17B39 /* reverseTwitterTokenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = reverseTwitterTokenTests.m; sourceTree = "<group>"; };
+		93E3044018D764D300A17B39 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		93E3044118D764D300A17B39 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		93E3044218D764D300A17B39 /* OAuth+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OAuth+Additions.h"; sourceTree = "<group>"; };
+		93E3044318D764D300A17B39 /* OAuth+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OAuth+Additions.m"; sourceTree = "<group>"; };
+		93E3044418D764D300A17B39 /* OAuthCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthCore.h; sourceTree = "<group>"; };
+		93E3044518D764D300A17B39 /* OAuthCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAuthCore.m; sourceTree = "<group>"; };
+		93E3044618D764D300A17B39 /* TWAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWAPIManager.h; sourceTree = "<group>"; };
+		93E3044718D764D300A17B39 /* TWAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWAPIManager.m; sourceTree = "<group>"; };
+		93E3044818D764D300A17B39 /* TWSignedRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSignedRequest.h; sourceTree = "<group>"; };
+		93E3044918D764D300A17B39 /* TWSignedRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSignedRequest.m; sourceTree = "<group>"; };
+		93E3044F18D765E000A17B39 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		93E3045118D765E500A17B39 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93E3045218D765E500A17B39 /* Accounts.framework in Frameworks */,
+				93E3045018D765E000A17B39 /* Social.framework in Frameworks */,
 				93E3040C18D764A100A17B39 /* CoreGraphics.framework in Frameworks */,
 				93E3040E18D764A100A17B39 /* UIKit.framework in Frameworks */,
 				93E3040A18D764A100A17B39 /* Foundation.framework in Frameworks */,
@@ -83,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				93E3040F18D764A100A17B39 /* reverseTwitterToken */,
+				93E3043E18D764D300A17B39 /* TWReverseOAuth */,
 				93E3042E18D764A200A17B39 /* reverseTwitterTokenTests */,
 				93E3040818D764A100A17B39 /* Frameworks */,
 				93E3040718D764A100A17B39 /* Products */,
@@ -101,6 +123,8 @@
 		93E3040818D764A100A17B39 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				93E3045118D765E500A17B39 /* Accounts.framework */,
+				93E3044F18D765E000A17B39 /* Social.framework */,
 				93E3040918D764A100A17B39 /* Foundation.framework */,
 				93E3040B18D764A100A17B39 /* CoreGraphics.framework */,
 				93E3040D18D764A100A17B39 /* UIKit.framework */,
@@ -150,6 +174,32 @@
 				93E3043118D764A200A17B39 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		93E3043E18D764D300A17B39 /* TWReverseOAuth */ = {
+			isa = PBXGroup;
+			children = (
+				93E3043F18D764D300A17B39 /* ABOAuthCore */,
+				93E3044618D764D300A17B39 /* TWAPIManager.h */,
+				93E3044718D764D300A17B39 /* TWAPIManager.m */,
+				93E3044818D764D300A17B39 /* TWSignedRequest.h */,
+				93E3044918D764D300A17B39 /* TWSignedRequest.m */,
+			);
+			name = TWReverseOAuth;
+			path = reverseTwitterToken/TWReverseOAuth;
+			sourceTree = "<group>";
+		};
+		93E3043F18D764D300A17B39 /* ABOAuthCore */ = {
+			isa = PBXGroup;
+			children = (
+				93E3044018D764D300A17B39 /* NSData+Base64.h */,
+				93E3044118D764D300A17B39 /* NSData+Base64.m */,
+				93E3044218D764D300A17B39 /* OAuth+Additions.h */,
+				93E3044318D764D300A17B39 /* OAuth+Additions.m */,
+				93E3044418D764D300A17B39 /* OAuthCore.h */,
+				93E3044518D764D300A17B39 /* OAuthCore.m */,
+			);
+			path = ABOAuthCore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,8 +299,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93E3044C18D764D300A17B39 /* OAuthCore.m in Sources */,
 				93E3042018D764A100A17B39 /* ViewController.m in Sources */,
+				93E3044E18D764D300A17B39 /* TWSignedRequest.m in Sources */,
+				93E3044A18D764D300A17B39 /* NSData+Base64.m in Sources */,
 				93E3041A18D764A100A17B39 /* AppDelegate.m in Sources */,
+				93E3044D18D764D300A17B39 /* TWAPIManager.m in Sources */,
+				93E3044B18D764D300A17B39 /* OAuth+Additions.m in Sources */,
 				93E3041618D764A100A17B39 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
